@@ -7,7 +7,7 @@
     <title>Вывод</title>
 </head>
 <body>
-<h2>Список заказов</h2>
+<h2>Список</h2>
 <form method="get" action="info">
     <table border="1" cellpadding="5">
         <tr>
@@ -22,6 +22,7 @@
         </c:forEach>
     </table>
     <a href="${pageContext.request.contextPath}/">Выход</a>
+    <a href="${pageContext.request.contextPath}/welcome">Назад</a>
 </form>
 </body>
 </html>
