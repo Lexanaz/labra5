@@ -21,8 +21,12 @@ public class InfoController {
         mav1.addObject("listInfo", listInfo);
         return mav1;
     }
-    @RequestMapping("/welcome")
+    @RequestMapping("/welcome1")
     public String wel() {
+        return "welcome1";
+    }
+    @RequestMapping("/welcome")
+    public String wel1() {
         return "welcome";
     }
 

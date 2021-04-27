@@ -44,7 +44,10 @@ public class Login extends HttpServlet {
         request.getSession().setAttribute("user",user);
         if (name.equals(user.getName()) && pass.equals(user.getPassword())) {
             request.getRequestDispatcher("WEB-INF/views/welcome.jsp").forward(request,response);
-        } else {
+        }
+        else if (name.equals("admin") && pass.equals("admin")) {
+            request.getRequestDispatcher("WEB-INF/views/welcome1.jsp").forward(request,response);
+        }else {
             response.sendRedirect("redirect:/");
 
         }

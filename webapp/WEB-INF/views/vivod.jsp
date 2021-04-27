@@ -26,7 +26,7 @@
         </c:forEach>
     </table>
      <a href="${pageContext.request.contextPath}/">Выход</a>
-    <a href="${pageContext.request.contextPath}/welcome">Назад</a>
+    <a href="${pageContext.request.contextPath}/welcome1">Назад</a>
 </form>
 </body>
 </html>
